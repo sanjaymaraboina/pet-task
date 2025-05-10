@@ -1,0 +1,66 @@
+.form-container {
+    padding: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  .form-head{
+    width: 100%;
+    height:100px;
+    background-color: #1FBFC2;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  .form-head p{
+    padding-left: 75px;
+  }
+  .step-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  
+  .step-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: black;
+    text-align: center;
+    line-height: 36px;
+    font-weight: bold;
+    z-index: 1;
+  }
+  
+  .step-circle.active {
+    background-color: #1FBFC2;
+    color: white;
+  }
+  
+  .step-line {
+    width: 40px;
+    height: 3px;
+    background-color: #ddd;
+    margin: 0 5px;
+  }
+  
+  .step-line.active {
+    background-color: #00bcd4;
+  }
+  
+  .dog-icon {
+    position: absolute;
+    top: -33px;
+    font-size: 25px;
+  }
+  
+ 

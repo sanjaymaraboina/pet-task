@@ -1,0 +1,219 @@
+.pet-page {
+  font-family: 'Segoe UI', sans-serif;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #444;
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn.blue {
+  width: 125px;
+  height: 50px;
+  background-color: #F6F9FE;
+  color: #1FBFC2;
+}
+
+.btn.green {
+  width: 125px;
+  height: 50px;
+  background-color: #1FBFC2;
+}
+
+.btn.orange {
+  width: 151px;
+  height: 48px;
+  background-color: #F5790C;
+}
+
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.pet-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.pet-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.pet-info {
+  padding: 12px;
+}
+
+.pet-info h2 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.location {
+  font-size: 13px;
+  color: gray;
+}
+
+.profile-table {
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-x: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.profile-table h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.profile-table table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.profile-table th,
+.profile-table td {
+  padding: 15px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-info img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: conic-gradient(#ff7a00 calc(1% * var(--percent)), #f3f3f3 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff7a00;
+  font-weight: bold;
+  font-size: 14px;
+  border: 2px solid #ff7a00;
+  --percent: 80;
+}
+
+.msg-btn {
+  background: #f97316;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.chat {
+  position: fixed;
+  bottom: 20px;
+  right: 84px;
+  z-index: 999;
+}
+
+.chat img {
+  width: 70px;
+  height: auto;
+}
+.btn-left{
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+  }
+  .chat {
+    right: 20px;
+  }
+  .circle {
+    width: 40px;
+    height: 40px;
+    font-size: 11px;
+  }
+
+  .msg-btn {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+
+ 
+
+  .chat img {
+    width: 60px;
+  }
+}
+
+
+@media(max-width:600px){
+ .btn.blue {
+  width: 105px;
+  height: 42px;
+ 
+}
+
+.btn.green {
+  width: 100px;
+  height: 40px;
+}
+
+.btn.orange {
+  width: 100px;
+  height: 42px;
+}
+}

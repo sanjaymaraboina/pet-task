@@ -1,0 +1,143 @@
+.navbar {
+  width: 100%;
+  background-color: white;
+  padding: 16px 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+
+.nav-links-desktop {
+  display: none;
+}
+
+.desktop-login {
+  display: none;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  z-index: 999;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #1FBFC2;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open .top {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open .middle {
+  opacity: 0;
+}
+
+.hamburger.open .bottom {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.mobile-menu.show {
+  max-height: 400px;
+  margin-top: 16px;
+}
+
+.nav-links-mobile {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-links-mobile li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links-mobile li a:hover {
+  color: white;
+  background-color: #1FBFC2;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.login-btn {
+  padding: 10px 24px;
+  color: #1FBFC2;
+  border: 1px solid #1FBFC2;
+  border-radius: 25px;
+  font-weight: 600;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #e6f9f9;
+}
+
+@media (min-width: 768px) {
+  .navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-links-desktop {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    margin: 0 24px;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .nav-links-desktop li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .desktop-login {
+    display: inline-block;
+  }
+
+  .hamburger,
+  .mobile-menu {
+    display: none;
+  }
+}
